@@ -1,0 +1,29 @@
+{
+    "name": "solarios/permission",
+    "description": "Permissions for Laravel 5.6",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jurre"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "laravel/framework": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Solarios\\Permission\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Solarios\\Permission\\PermissionServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
