@@ -19,12 +19,12 @@ class CreateRoles extends Migration
             $table->timestamps();
         });
         
-        Schema::create('rolables', function (Blueprint $table) use ($tableNames) {
+        Schema::create('rolables', function (Blueprint $table) {
             $table->integer('role_id')->unsigned();
             $table->morphs('rolable');
         });
         
-        Schema::create('permission_role', function (Blueprint $table) use ($tableNames) {
+        Schema::create('permission_role', function (Blueprint $table) {
             $table->integer('permission_id')->unsigned();
             $table->integer('role_id')->unsigned();
         });

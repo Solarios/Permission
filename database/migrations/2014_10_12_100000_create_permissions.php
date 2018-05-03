@@ -19,7 +19,7 @@ class CreatePermissions extends Migration
             $table->timestamps();
         });
         
-        Schema::create('permissionables', function (Blueprint $table) use ($tableNames) {
+        Schema::create('permissionables', function (Blueprint $table) {
             $table->integer('permission_id')->unsigned();
             $table->morphs('permissionable');
         });
